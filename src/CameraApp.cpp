@@ -7,7 +7,7 @@
 #include "raylib.h"
 
 CameraApp::CameraApp(const int& width, const int& height)
-    : width(width), height(height) {
+    : width_(width), height_(height) {
   InitWindow(width, height,
              "raylib [core] example - 2d camera mouse zoom");
   SetTargetFPS(60);
@@ -39,7 +39,7 @@ void CameraApp::Draw() {
   BeginDrawing();
   ClearBackground(RAYWHITE);
 
-  sceneRenderer_.Render(controller_->GetCamera(), width, height);
+  sceneRenderer_.Render(controller_->GetCamera(), width_, height_);
   uiRenderer_.Render(zoomMode_);
 
   EndDrawing();

@@ -19,6 +19,6 @@ class CameraApp {
   std::unique_ptr<CameraController> controller_;
   SceneRenderer sceneRenderer_;
   UIRenderer uiRenderer_;
-  int width;
-  int height;
+  int width_;
+  int height_;
 };
