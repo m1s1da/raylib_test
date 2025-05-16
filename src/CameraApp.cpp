@@ -9,7 +9,7 @@
 CameraApp::CameraApp(const int& width, const int& height)
     : width(width), height(height) {
   InitWindow(width, height,
-             "raylib [core] example - 2d camera mouse zoom (SOLID)");
+             "raylib [core] example - 2d camera mouse zoom");
   SetTargetFPS(60);
   controller_ = std::make_unique<CameraController>(
       std::make_unique<MouseWheelZoom>(), width, height);
